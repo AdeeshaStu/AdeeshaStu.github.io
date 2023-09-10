@@ -17,6 +17,17 @@ header{
     align-items: center;
 }
 
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 0;
+    background-color: #12121e; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
 .logo{
     margin-top: 20px;
     width: 150px;
@@ -256,6 +267,9 @@ footer{
 
 @media screen and (max-width: 855px) {
     /* Add your responsive styles here for smaller screens */
+    .container{
+        height: 600px;
+    }
     h2{
         bottom: 200px;
     }
@@ -362,7 +376,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 382px) {
     h1{
         text-align: center;
         margin-bottom: 30px;

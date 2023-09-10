@@ -10,12 +10,24 @@ body{
     /*font color- #63d3e0 */
 }
 
-nav {
+.logo{
+    flex-wrap: wrap;
+    position: absolute;
+    top: -10px;
+}
 
+img.logo-icon{
+    width: 50px;
+}
+
+nav {
+    flex-wrap: wrap;
+    margin-top: 15px;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
+    margin-right: 20px;
 
 }
 
@@ -46,6 +58,18 @@ nav li a:hover {
     color: #12121e;
     background-color: #63d3e0;
     border-radius: 10px;
+}
+
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 0;
+    background-color: #12121e; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 section {
@@ -181,6 +205,45 @@ button:hover{
     color: #98bbbe;
 }
 
+
+
+.images{
+    opacity: 0.5;
+}
+
+h4{
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    color: #63d3e0;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+}
+
+.btn{
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    border-color: #63d3e0;
+    color: #63d3e0;
+    background-color: #12121e;
+    font-family: 'Arvo', serif;
+    transition: 0.3s ease;
+    left: 200px;
+    bottom: 20px;
+}
+
+.btn:hover{
+    background-color: #63d3e0;
+    color: #12121e;
+}
+
+
 /* footer */
 footer{
     padding-bottom: 50px;
@@ -275,6 +338,15 @@ footer{
     h3{
         margin-top: 0px;
     }
+
+    .logo{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50px;
+    }
+
     nav ul {
         flex-direction: column;
     }
@@ -293,6 +365,14 @@ footer{
 
     .sec1{
         height: 90vh;
+    }
+    
+    h4{
+        left: 10px;
+        font-size: 2.5rem;
+    }
+    .btn{
+        left: 10px;
     }
     
     
@@ -358,6 +438,11 @@ footer{
     .sec2{
         height: 150px;
     }
+    .sec3{
+        position: relative;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
 
     button{
         margin-bottom: 20px;
@@ -382,10 +467,19 @@ footer{
         margin-left: 10px;
         margin-top: 1px;
     }
+
+    .btn{
+        bottom: 40px;
+    }
 }
 @media screen and (max-width: 438px) {
     h1{
         font-size: 3.8rem;
+    }
+    h4{
+        top: 50px;
+        font-size: 1.5rem;
+        bottom: 250px;
     }
 
     .sec1{
@@ -393,7 +487,7 @@ footer{
     }
 
     .sec2{
-        height: 105px;
+        height: 120px;
     }
 }
 
@@ -408,6 +502,8 @@ footer{
         margin-top: 0px;
     }
 
+    
+
     h2{
         top: 0px;
     }
@@ -417,6 +513,10 @@ footer{
     
     .sec2{
         height: 300px;
+    }
+    .sec3{
+        position: relative;
+        margin-top:250px;
     }
 
     .logo-icon{

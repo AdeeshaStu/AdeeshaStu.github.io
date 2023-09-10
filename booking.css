@@ -19,6 +19,17 @@ header{
     flex-wrap: wrap;
 }
 
+header.sticky {
+    position: fixed;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 0;
+    background-color: #12121e; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
 section{
     margin-left: 5%;
     cursor: pointer;

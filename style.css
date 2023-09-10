@@ -10,23 +10,29 @@ body{
     /*font color- #63d3e0 */
 }
 
-nav  {
-
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.logo{
+    flex-wrap: wrap;
+    position: absolute;
+    top: -10px;
 }
 
-nav img {
-    width: 60px;
-    height: auto;
-    position: relative;
-    right: 250px;
+img.logo-icon{
+    width: 50px;
+}
+
+nav {
+    flex-wrap: wrap;
+    margin-top: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 20px;
+
 }
 
 nav ul {
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,11 +40,13 @@ nav ul {
 }
 
 nav li {
+    
     float: left;
     margin-right: 20px;
 }
 
 nav li a {
+    
     display: block;
     color: white;
     text-align: center;
@@ -50,9 +58,21 @@ nav li a {
 }
 
 nav li a:hover {
+    
     color: #12121e;
     background-color: #63d3e0;
     border-radius: 10px;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 0;
+    background-color: #12121e; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 section {
@@ -254,6 +274,14 @@ footer{
     h2{
         bottom: 200px;
     }
+
+    .logo{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50px;
+    }
     nav ul {
         flex-direction: column;
     }
@@ -266,13 +294,6 @@ footer{
         margin-bottom: 0;
     }
     
-    h3{
-        left: 10px;
-        font-size: 2.5rem;
-    }
-    button{
-        left: 10px;
-    }
 }
 
 @media screen and (max-width: 558px) {
@@ -285,6 +306,8 @@ footer{
     h2{
         font-size: 18px;
         bottom: 200px;
+        left: 30px;
+
     }
     
     .sec1{
@@ -321,20 +344,14 @@ footer{
         
         width: 100%;
     }
-    
-    h2{
-        left: 30px;
-    }
+
 
     .sec2{
         position: relative;
         margin-top: 200px;
         margin-bottom: 200px;
     }
-    .sec2 iframe{
-
-        margin-bottom: 100px;
-    }
+    
     .center-icons {
         text-align: center;
         margin-top: 0px;
@@ -350,9 +367,7 @@ footer{
         margin-top: 1px;
     }
 
-    button{
-        bottom: 90px;
-    }
+
 }
 
 @media screen and (max-width: 381px) {
@@ -360,12 +375,6 @@ footer{
         text-align: center;
         margin-bottom: 30px;
         font-size: 2rem;
-    }
-
-    h3{
-        top: 50px;
-        font-size: 1.5rem;
-        bottom: 250px;
     }
 
     h2{
@@ -398,10 +407,7 @@ footer{
     .sec1{
         height: 900px;
     }
-    .sec2{
-        position: relative;
-        margin-top:250px;
-    }
+    
 
 
     p{

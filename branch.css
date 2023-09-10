@@ -10,14 +10,27 @@ body{
     /*font color- #63d3e0 */
 }
 
-nav {
+.logo{
+    flex-wrap: wrap;
+    position: absolute;
+    top: -10px;
+}
 
+img.logo-icon{
+    width: 50px;
+}
+
+nav {
+    flex-wrap: wrap;
+    margin-top: 15px;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
+    margin-right: 20px;
 
 }
+
 
 nav ul {
     list-style-type: none;
@@ -46,6 +59,17 @@ nav li a:hover {
     color: #12121e;
     background-color: #63d3e0;
     border-radius: 10px;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 0;
+    background-color: #12121e; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 section {
@@ -246,6 +270,15 @@ footer{
     h3{
         margin-top: 0px;
     }
+
+    .logo{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 50px;
+    }
+
     nav ul {
         flex-direction: column;
     }
